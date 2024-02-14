@@ -1,0 +1,5 @@
+mediapipe==0.8.7.2
+keras
+tensorflow
+numpy
+opencv-python
