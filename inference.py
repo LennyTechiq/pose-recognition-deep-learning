@@ -26,7 +26,7 @@ while True:
 
 	_, frm = cap.read()
 
-	window = np.zeros((940,940,3), dtype="uint8")
+	window = np.zeros((1200, 1600,3), dtype="uint8")
 
 	frm = cv2.flip(frm, 1)
 
@@ -58,7 +58,7 @@ while True:
 							 landmark_drawing_spec=drawing.DrawingSpec(color=(0,0,255), circle_radius=3, thickness=3))
 
 
-	window[420:900, 170:810, :] = cv2.resize(frm, (640, 480))
+	window[200:800, 400:1200, :] = cv2.resize(frm, (800, 600))
 
 	cv2.imshow("window", window)
 
